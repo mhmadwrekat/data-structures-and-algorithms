@@ -27,6 +27,6 @@ To run your tests
 
 ***[Challenge 1 - Array-Reverse](./python/code_challenges/class-01/array-reverse.md)***
 
-***[Challenge 2 - array-insert-shift](./python/code_challenges/class-01/array-insert-shift.md)***
+***[Challenge 2 - array-insert-shift](./python/code_challenges/class-02/array-insert-shift.md)***
 
 
