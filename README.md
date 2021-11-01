@@ -25,8 +25,8 @@ To run your tests
 
 *- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course .*
 
-***[Challenge 1 - Array-Reverse](./python/code_challenges/class-01/array-reverse.md)***
+***[Challenge 1 - Array-Reverse](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-01/array-reverse.html)***
 
-***[Challenge 2 - array-insert-shift](./python/code_challenges/class-02/array-insert-shift.md)***
+***[Challenge 2 - array-insert-shift](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-02/array-insert-shift.html)***
 
 
