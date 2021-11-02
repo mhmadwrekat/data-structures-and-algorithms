@@ -1,32 +1,9 @@
 # Data Structures and Algorithms
 
-See [setup instructions](https://codefellows.github.io/setup-guide/code-301/3-code-challenges), in the Code 301 Setup Guide.
+## Table of content
 
-## Repository Quick Tour and Usage
+1. ***[Code Challenge 1 - Array-Reverse](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-01/array-reverse.html)***
 
-### 301 Code Challenges
+2. ***[Code Challenge 2 - array-insert-shift](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-02/array-insert-shift.html)***
 
-Under the `javascript` folder, at the top level, is a sub-folder called `code-challenges`
-
-Each day, you'll add one new file to this folder to do your work for the day's assigned code challenge
-
-If you have not already done so, run `npm install` from within this folder to setup your system to be able to run tests using `Jest`
-
-To run your tests
-
-- Change to the `javascript` folder
-- run `npm test` to run all of the tests
-- run `npm test ##` to only run tests for challenge ## (i.e. 01)
-
----
----
-
-## 401 Data Structures, Code Challenges
-
-*- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course .*
-
-***[Challenge 1 - Array-Reverse](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-01/array-reverse.html)***
-
-***[Challenge 2 - array-insert-shift](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-02/array-insert-shift.html)***
-
-
+2. ***[Code Challenge 3 - array-binary-search](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-03/array-binary-search.html)***
