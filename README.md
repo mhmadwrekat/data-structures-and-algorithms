@@ -8,9 +8,9 @@
 |Code Challenge 2|***[array-insert-shift](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-02/array-insert-shift.html)***|
 |Code Challenge 3|***[array-binary-search](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-03/array-binary-search.html)***|
 |Code Challenge 4|***[...](...)***|
-|Code Challenge 5|***[Linked List](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-05/challenge5.html)***|
-|Code Challenge 6|***[linked-list-insertions](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-05/challenge6.html)***|
-|Code Challenge 7|***[linked-list-kth](https://mhmadwrekat.github.io/data-structures-and-algorithms/python/code_challenges/class-05/challenge7.html)***|
+|Code Challenge 5|***[Linked List](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/linked/linked-list/challenge5.md)***|
+|Code Challenge 6|***[linked-list-insertions](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/linked/linked-list/challenge6.md)***|
+|Code Challenge 7|***[linked-list-kth](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/linked/linked-list/challenge7.md)***|
 
 
 
