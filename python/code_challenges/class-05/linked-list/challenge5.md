@@ -16,9 +16,11 @@ Check-list
 
 - Can properly return a collection of all the values that exist in the linked list .
 
+---
 ### Challenge
 Create the data structure for the linked lists were we connect nodes in memory in a sequence.
 
+---
 ### API
 the class Linked List have 3 methods:
 
