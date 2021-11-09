@@ -15,7 +15,10 @@
 ---
 ### API
 
-**added 3 new methods to the class:**
+***[The Code](linked_list/linked.py)***
+
+
+*added 3 new methods to the class:*
 
 1. **append:** allow us to add a node to the linked list .
 

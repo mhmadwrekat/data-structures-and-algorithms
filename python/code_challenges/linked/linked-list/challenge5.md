@@ -22,7 +22,11 @@ Create the data structure for the linked lists were we connect nodes in memory i
 
 ---
 ### API
-the class Linked List have 3 methods:
+
+***[The Code](linked_list/linked.py)***
+
+
+*The class Linked List have 3 methods :*
 
 - **insert:** allow us to add a node to the linked list
 
