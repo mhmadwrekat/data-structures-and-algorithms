@@ -11,7 +11,7 @@
 |Code Challenge 5|***[Linked List](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/linked/linked-list/challenge5.md)***|
 |Code Challenge 6|***[linked-list-insertions](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/linked/linked-list/challenge6.md)***|
 |Code Challenge 7|***[linked-list-kth](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/linked/linked-list/challenge7.md)***|
-
+|Code Challenge 8|***[linked-list-zip](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/linked/linked-list/challenge8.md)***|
 
 
 
