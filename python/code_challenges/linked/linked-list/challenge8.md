@@ -17,8 +17,9 @@
 
 - zip_lists Function : takes in two linked lists and start putting items from each one at a time until both lists are empty .
 
-[The Code](linked_list/cc8.py)
+***[The Code](linked_list/cc8.py)***
 
+***[The Tests](tests/test_cc8.py)***
 ---
 ### **WhiteBord**
 
