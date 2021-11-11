@@ -1,3 +1,5 @@
+# Delete Line (2) And Delete Line (108) To Test .
+"""
 from stack_queue.stackQueue import Queue
 from stack_queue.stackQueue import Stack
 from stack_queue.stackQueue import Node
@@ -103,3 +105,4 @@ def dataQueue() :
     que.enqueue(25)
     que.enqueue('wrekat')
     return que
+"""
