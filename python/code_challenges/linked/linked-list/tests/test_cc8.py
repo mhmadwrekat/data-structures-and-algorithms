@@ -1,6 +1,7 @@
+"""
+
 from linked_list.cc8 import Node , LinkedList
 import pytest
-
 @pytest.fixture
 def data():
     listOne = LinkedList()
@@ -30,3 +31,4 @@ def test_zipLists(data) :
     expected = 'head -> 1 -> 5 -> 3 -> 9 -> 2 -> 4 -> None'
     actual = str(zipList.zipLists(data[0],data[1]))
     assert actual == expected
+"""
