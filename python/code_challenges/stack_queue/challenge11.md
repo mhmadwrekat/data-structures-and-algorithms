@@ -25,7 +25,7 @@ Implement a Queue And enqueue And dequeue using just two Stacks .
 - enqueue O(1) .
 - dequeue O(n) .
 
-> ***[The Code .....](/python/code_challenges/stack_queue/stack_queue/stack-queue-pseudo.py)***
+> ***[The Code .....](/python/code_challenges/stack_queue/stack_queue/stack_queue_pseudo.py)***
 
 > ***[The Tests .....](/python/code_challenges/stack_queue/tests/test_stack-queue-pseudo.py)***
 
