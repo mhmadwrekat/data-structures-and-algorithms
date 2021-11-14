@@ -45,9 +45,8 @@ def test_stack_empty() :
     assert expected == actual
 # Test.8
 def test_stack_raise_exception():
-  stack = Stack()
-  with pytest.raises(Exception, match ="Its Empty" ):
-      stack.stackPeek()
+    stack = Stack()
+    assert stack.stackPeek() == "Its Empty"
 # Stack Data
 @pytest.fixture
 def dataStack() :
