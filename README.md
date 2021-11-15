@@ -14,7 +14,7 @@
 |Code Challenge 8|***[linked-list-zip](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/linked/linked-list/challenge8.md)***|
 |Code Challenge 10|***[Stack And Queue](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue/challenge10.md)***|
 |Code Challenge 11|***[stack-queue-pseudo](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue/challenge11.md)***|
-
+|Code Challenge 12|***[Queue Animal Shelter](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue/challenge12.md)***|
 
 
 
