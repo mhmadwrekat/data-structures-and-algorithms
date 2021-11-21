@@ -17,5 +17,5 @@
 |Code Challenge 12|***[Queue Animal Shelter](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue/challenge12.md)***|
 |Code Challenge 13|***[stack-queue-brackets](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue/challenge13.md)***|
 |Code Challenge 15|***[Trees](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge15.md)***|
-|Code Challenge 15|***[tree-max](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge.md)***|
+|Code Challenge 16|***[tree-max](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge16.md)***|
 
