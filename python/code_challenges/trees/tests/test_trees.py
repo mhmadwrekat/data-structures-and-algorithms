@@ -1,10 +1,9 @@
-# Delete Line (7) And Delete Line (49) To Test .
+
 from trees import __version__
 from trees.Trees import BinaryTree, Node
 import pytest
 def test_version():
     assert __version__ == '0.1.0'
-"""
 # Test.1
 def test_empty_tree() :
     tree = BinaryTree()
@@ -46,4 +45,3 @@ def data () :
     tree.root.left.right = Node("E")
     tree.root.right.left = Node("F")
     return tree
-"""
