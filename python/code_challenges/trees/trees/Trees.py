@@ -143,5 +143,5 @@ if __name__ == "__main__" :
     print("['D', 'E', 'B', 'F', 'C', 'A'] -> Post-Order")
     print(traveres_post(tree_pre.root))
     view()
-    print(treeNum.max_value())
+    print('Max Value : ', treeNum.max_value())
     view()
