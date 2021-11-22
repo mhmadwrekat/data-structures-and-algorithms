@@ -71,6 +71,26 @@ class BinaryTree () :
                 return "Error"
         _traveres(self.root)
         return _max
+
+    def breadthFirst(self) :
+        node_list=[]
+        def _traveres (_root) :
+            try :
+                nonlocal node_list
+                if _root is not None :
+                    tree_list = []
+                    tree_list += [_root]
+                while tree_list :
+                    our_Node = tree_list[0]
+                    if our_Node.left :
+                        tree_list += [our_Node.left]
+                    if our_Node.right :
+                        tree_list += [our_Node.right]
+                    node_list += [tree_list.pop(0).value]
+                return node_list
+            except:
+                return "Error"
+        return _traveres
 ########## Binary-Search-Tree ###########
 class BinarySearchTree (BinaryTree) :
     def add (self,data) :
@@ -126,11 +146,14 @@ def createTreeNum () :
     tree.root.right.right.left = Node(4)
     return tree
 
-treeNum = createTreeNum()
 tree_pre = createTree()
+
 traveres_pre = tree_pre.pre_order()
 traveres_in = tree_pre.in_order()
 traveres_post = tree_pre.post_order()
+
+treeNum = createTreeNum()
+treeNumPre = treeNum.breadthFirst()
 
 if __name__ == "__main__" :
     view()
@@ -145,3 +168,6 @@ if __name__ == "__main__" :
     view()
     print('Max Value : ', treeNum.max_value())
     view()
+    print('Tree Breadth First\n( expected ) [2, 7, 5, 2, 6, 9, 5, 11, 4]')
+    print(' ( Actual ) ',treeNumPre(treeNum.root))
+

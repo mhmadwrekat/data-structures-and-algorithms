@@ -36,7 +36,13 @@ def test_post_order(data) :
 # Test.8
 def test_max_value(dataNum):
     assert 11 == dataNum.max_value()
-# Tree Data
+# Test.9
+def test_tree_breadth_first(dataNum,data):
+    treeNum = dataNum.breadthFirst()
+    treeStr = data.breadthFirst()
+    assert treeNum(dataNum.root) == [2, 7, 5, 2, 6, 9, 5, 11, 4]
+    assert treeStr(data.root) == ['A', 'B', 'C', 'D', 'E', 'F']
+# Tree Data 1
 @pytest.fixture
 def data () :
     tree = BinaryTree()
@@ -47,6 +53,7 @@ def data () :
     tree.root.left.right = Node("E")
     tree.root.right.left = Node("F")
     return tree
+# Tree Data 2
 @pytest.fixture
 def dataNum () :
     tree = BinaryTree()
