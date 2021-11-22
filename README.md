@@ -18,4 +18,5 @@
 |Code Challenge 13|***[stack-queue-brackets](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/stack_queue/challenge13.md)***|
 |Code Challenge 15|***[Trees](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge15.md)***|
 |Code Challenge 16|***[tree-max](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge16.md)***|
+|Code Challenge 17|***[tree-breadth-first](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge17.md)***|
 
