@@ -53,6 +53,24 @@ class BinaryTree () :
             except:
                 return "Error"
         return _traveres
+
+    def max_value (self) :
+        _max = self.root.value
+        def _traveres (node) :
+            try :
+                nonlocal _max
+#                output.append(_root.value)
+                if node.value > _max :
+                    _max = node.value
+#                    _traveres(_root.left)
+                if node.left is not None :
+                    _traveres(node.left)
+                if node.right is not None :
+                    _traveres(node.right)
+            except:
+                return "Error"
+        _traveres(self.root)
+        return _max
 ########## Binary-Search-Tree ###########
 class BinarySearchTree (BinaryTree) :
     def add (self,data) :
@@ -95,11 +113,25 @@ def createTree () :
     tree.root.right.left = Node("F")
     return tree
 
-tree_pre = createTree()
+def createTreeNum () :
+    tree = BinaryTree()
+    tree.root = Node(2)
+    tree.root.left = Node(7)
+    tree.root.right = Node(5)
+    tree.root.left.left = Node(2)
+    tree.root.left.right = Node(6)
+    tree.root.left.right.left = Node(5)
+    tree.root.left.right.right = Node(11)
+    tree.root.right.right = Node(9)
+    tree.root.right.right.left = Node(4)
+    return tree
 
+treeNum = createTreeNum()
+tree_pre = createTree()
 traveres_pre = tree_pre.pre_order()
 traveres_in = tree_pre.in_order()
 traveres_post = tree_pre.post_order()
+
 if __name__ == "__main__" :
     view()
     print("['A', 'B', 'D', 'E', 'C', 'F'] -> Pre-Order")
@@ -110,4 +142,6 @@ if __name__ == "__main__" :
     view()
     print("['D', 'E', 'B', 'F', 'C', 'A'] -> Post-Order")
     print(traveres_post(tree_pre.root))
+    view()
+    print(treeNum.max_value())
     view()
