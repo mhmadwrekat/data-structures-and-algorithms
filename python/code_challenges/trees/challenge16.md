@@ -10,9 +10,9 @@ Write the following method for the Binary Tree class find maximum value , Argume
 - Space O(n) .
 - Time O(n) .
 
-> ***[The Code .....](/python/code_challenges/trees/trees/tree_max.py)***
+> ***[The Code .....](/python/code_challenges/trees/trees/Trees.py)***
 
-> ***[The Tests .....](/python/code_challenges/trees/tests/test_tree_max.py)***
+> ***[The Tests .....](/python/code_challenges/trees/tests/test_trees.py)***
 
 ---
 ## White Board
