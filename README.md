@@ -19,4 +19,4 @@
 |Code Challenge 15|***[Trees](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge15.md)***|
 |Code Challenge 16|***[tree-max](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge16.md)***|
 |Code Challenge 17|***[tree-breadth-first](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge17.md)***|
-
+|Code Challenge 18|***[tree-fizz-buzz](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge18.md)***|

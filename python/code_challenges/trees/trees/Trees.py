@@ -91,6 +91,7 @@ class BinaryTree () :
             except:
                 return "Error"
         return _traveres
+
 ########## Binary-Search-Tree ###########
 class BinarySearchTree (BinaryTree) :
     def add (self,data) :
@@ -122,6 +123,29 @@ class BinarySearchTree (BinaryTree) :
                 else:
                        if new_node.left == None :
                          return False
+############ Fizz Buzz #############
+def fizzBuzz(node):
+    if node.value % 15 == 0:
+        return'FizzBuzz'
+    elif node.value %3 == 0:
+        return'Fizz'
+    elif node.value % 5 == 0:
+        return'Buzz'
+    else:
+        return str(node.value)
+########## Fizz Buzz Tree ###########
+def FizzBuzzTree(tree):
+    if not tree.root:
+        return []
+    new_binary_tree = BinaryTree()
+    def traverser(node):
+        new_binary_tree.output = new_binary_tree.output + [fizzBuzz(node)]
+        if node.left:
+            traverser(node.left)
+        if node.right:
+            traverser(node.right)
+        return new_binary_tree.output
+    return traverser(tree.root)
 
 def createTree () :
     tree = BinaryTree()
@@ -146,28 +170,48 @@ def createTreeNum () :
     tree.root.right.right.left = Node(4)
     return tree
 
-tree_pre = createTree()
+def createTreeNumTwo () :
+    tree = BinaryTree()
+    tree.root = Node(12)
+    tree.root.left = Node(15)
+    tree.root.right = Node(5)
+    tree.root.left.right = Node(6)
+    tree.root.left.left = Node(8)
+    tree.root.right.right=Node(9)
+    tree.root.right.right.left=Node(4)
+    tree.root.left.left.right=Node(5)
+    tree.root.left.right.left = Node(11)
+    return tree
 
-traveres_pre = tree_pre.pre_order()
-traveres_in = tree_pre.in_order()
-traveres_post = tree_pre.post_order()
+tree = createTree()
+traveres_pre = tree.pre_order()
+traveres_in = tree.in_order()
+traveres_post = tree.post_order()
 
 treeNum = createTreeNum()
 treeNumPre = treeNum.breadthFirst()
 
+treeNumTwo = createTreeNumTwo()
+
 if __name__ == "__main__" :
     view()
     print("['A', 'B', 'D', 'E', 'C', 'F'] -> Pre-Order")
-    print(traveres_pre(tree_pre.root))
+    print(traveres_pre(tree.root))
     view()
     print("['D', 'B', 'E', 'A', 'F', 'C'] -> In-Order")
-    print(traveres_in(tree_pre.root))
+    print(traveres_in(tree.root))
     view()
     print("['D', 'E', 'B', 'F', 'C', 'A'] -> Post-Order")
-    print(traveres_post(tree_pre.root))
+    print(traveres_post(tree.root))
     view()
     print('Max Value : ', treeNum.max_value())
     view()
     print('Tree Breadth First\n( expected ) [2, 7, 5, 2, 6, 9, 5, 11, 4]')
     print(' ( Actual ) ',treeNumPre(treeNum.root))
-
+    view()
+    view()
+    print('( expected )')
+    print("['Fizz', 'FizzBuzz', '8', 'Buzz', 'Fizz', '11', 'Buzz', 'Fizz', '4']")
+    print(' ( Actual )')
+    print(FizzBuzzTree(treeNumTwo))
+    view()
