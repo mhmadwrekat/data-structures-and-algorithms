@@ -1,5 +1,8 @@
 ## Insertion Sort
 
+> ***[BLOG.md .....](/python/code_challenges/insertion_sort/BLOG.md)***
+
+
 Insertion Sort is a sorting algorithm that traverses the array multiple times as it slowly builds out the sorting sequence .
 
 so first of all you get the length of the array
