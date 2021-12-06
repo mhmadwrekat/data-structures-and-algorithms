@@ -24,7 +24,7 @@
   * Space: O(1)
     - This list is being sorted in place, keeping the space at constant O(1).
 
-> ***[The Code .....](/python/code_challenges/merge-sort/merge-sort/merge.py)***
+> ***[The Code .....](/python/code_challenges/merge-sort/merge_sort/merge.py)***
 
 > ***[The Tests .....](/python/code_challenges/merge-sort/tests/test_merge_sort.py)***
 
