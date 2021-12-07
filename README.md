@@ -21,6 +21,9 @@
 |Code Challenge 17|***[tree-breadth-first](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge17.md)***|
 |Code Challenge 18|***[tree-fizz-buzz](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/trees/challenge18.md)***|
 |Code Challenge 26|***[Insertion Sort](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/insertion_sort/challenge26.md)***|
-|Code Challenge 26|***[Merge Sort](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/merge-sort/challenge27.md)***|
+|Code Challenge 27|***[Merge Sort](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/merge-sort/challenge27.md)***|
+|Code Challenge 28|***[Quick Sort](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/quick_sort/challenge28.md)***|
+
+
 
 
