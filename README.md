@@ -23,7 +23,7 @@
 |Code Challenge 26|***[Insertion Sort](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/insertion_sort/challenge26.md)***|
 |Code Challenge 27|***[Merge Sort](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/merge-sort/challenge27.md)***|
 |Code Challenge 28|***[Quick Sort](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/quick_sort/challenge28.md)***|
-
+|Code Challenge 30|***[Hash Table](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/hash_table/challenge30.md)***|
 
 
 
