@@ -1,64 +1,56 @@
+import re
+class HashTable :
+  def __init__(self, size = 1024) :
+    self.max = size
+    self.arr = [[] for i in range(self.max)]
 
+  def hash(self, key) :
+    hash = 0
+    for char in key :
+        hash += ord(char)
+    hash_index= hash % self.max
+    return hash_index
 
-class Node :
-    def __init__(self, key, value) :
-        self.key = key
-        self.value = value
-        self.next = None
+  def add(self, key, value) :
+    hash = self.hash(key)
+    found = False
+    for idx, element in enumerate(self.arr[hash]) :
+      if len(element)==2 and element[0] == key :
+          self.arr[hash][idx] = (key,value)
+          found = True
+    if not found :
+      self.arr[hash].append((key,value))
 
-class Hashtable :
-    def __init__(self) :
-        self.size = 0
-        self.capacity = 1024
-        self.buckets = [None] * self.capacity
+  def get(self, key) :
+    hash = self.hash(key)
+    for element in self.arr[hash] :
+      if element[0] == key :
+        return element[1]
 
-    def hash(self, key) :
-        asscii_sum = 0
-        for i in key :
-            asscii_ch = ord(i)
-            asscii_sum += asscii_ch
-        temp_value = asscii_sum * 19
-        hashed = temp_value % self.capacity
-        return hashed
+  def contains(self, key) :
+    hash = self.hash(key)
+    found = False
+    for idx, element in enumerate(self.arr[hash]) :
+      if len(element)==2 and element[0] == key :
+        found = True
+    return found
 
-    def add(self, key, value) :
-        self.size += 1
-        index = self.hash(key)
-        node = self.buckets[index]
+  def delete(self , key) :
+    hash = self.hash(key)
+    for idx , element in enumerate(self.arr[hash]) :
+      if element[0] == key :
+        del self.arr[hash][idx]
 
-        if node is None :
-           self.buckets[index] = Node(key, value)
-           return
+## Challenge 31 -> REPEATED WORD :
 
-        else:  # Collision
-            prev = node
-            while node is not None :
-                prev = node
-                node = node.next
-            prev.next = Node(key, value)
-
-    def get(self, key) :
-        index = self.hash(key)
-        node = self.buckets[index]
-        while node is not None and node.key != key :
-            node = node.next
-        if node is None :
-            return "NULL"
-        else :
-            return node.value
-
-    def contain(self, key) :
-        index = self.hash(key)
-        node = self.buckets[index]
-        while node is not None and node.key != key :
-            node = node.next
-        if node is None :
-            return False
-        else :
-            return True
-
-if __name__ == "__main__" :
-    hash = Hashtable()
-
-    print(hash.hash('Wrekat'))
-    print(hash.hash('takerW'))
+def repeated_word(str) :
+  if str == "" :
+    return 'Empty String'
+  strs = re.sub(r'[^\w\s]','',str).lower().split(' ')
+  hash_table = HashTable()
+  for i in strs :
+    if hash_table.contains(i) :
+      return i
+    else :
+      hash_table.add(i, 1)
+  return 'Nothing Repeate !!!'
