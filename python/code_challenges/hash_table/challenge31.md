@@ -21,7 +21,7 @@ Write a function that accepts a lengthy string parameter, Without utilizing any 
 ## Check List
 
 - [x] Branch Name : hashmap-repeated-word .
-- [ ] Write a function called repeated word that finds the first word to occur more than once in a string
+- [x] Write a function called repeated word that finds the first word to occur more than once in a string
     - Arguments: string
     - Return: string
 - [x] Top-level README **Table of Content** is updated.
