@@ -25,5 +25,5 @@
 |Code Challenge 28|***[Quick Sort](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/quick_sort/challenge28.md)***|
 |Code Challenge 30|***[Hash Table](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/hash_table/challenge30.md)***|
 |Code Challenge 31|***[Hash Taple Repeated Word](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/hash_table/challenge31.md)***|
-
+|Code Challenge 32|***[Tree Intersection](https://github.com/mhmadwrekat/data-structures-and-algorithms/blob/main/python/code_challenges/tree_intersection/challenge32.md)***|
 
