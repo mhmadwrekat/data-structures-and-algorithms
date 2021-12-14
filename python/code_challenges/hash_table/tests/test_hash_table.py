@@ -1,5 +1,6 @@
 from hash_table import __version__
-from hash_table.hash import HashTable, repeated_word
+from hash_table.hash import HashTable, repeated_word, left_join_hash
+import pytest
 
 def test_version() :
     assert __version__ == '0.1.0'
@@ -34,7 +35,7 @@ def test_delete() :
   hash_table.delete('hello')
   assert len(hash_table.arr[hash_table.hash('hello')]) == 0
 
-# Test Function First Repeated :
+# Test Function First Repeated (Challenge 31) :
 
 def test_first_repeated () :
     assert repeated_word("Once upon a time, there was a brave princess who...") == "a"
@@ -43,3 +44,28 @@ def test_first_repeated () :
 
 def test_no_repeated () :
     assert repeated_word("My Name Is Mohammad Alwrekat") == "Nothing Repeate !!!"
+
+# Test Function Hash Map Left Join (Challenge 33) :
+
+def test_hashmap_left_join(data) :
+    expected = [['fond', 'enamored', 'averse'], ['guide', 'usher', 'follow'], ['wrath', 'anger', 'delight'], ['outfit', 'garb', None], ['diligent', 'employed', 'idle'], ['flow', None, 'jam']]
+    assert (left_join_hash(data[0],data[1])) == expected
+
+## DATA
+
+@pytest.fixture
+def data() :
+    hash_one = HashTable()
+    hash_one.add("fond", "enamored")
+    hash_one.add("wrath", "anger")
+    hash_one.add("diligent", "employed")
+    hash_one.add("outfit", "garb")
+    hash_one.add("guide", "usher")
+    hash_two = HashTable()
+    hash_two.add("fond", "averse")
+    hash_two.add("wrath", "delight")
+    hash_two.add("diligent", "idle")
+    hash_two.add("guide", "follow")
+    hash_two.add("flow", "jam")
+
+    return[hash_one,hash_two]
