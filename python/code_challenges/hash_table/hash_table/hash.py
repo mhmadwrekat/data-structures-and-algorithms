@@ -41,6 +41,13 @@ class HashTable :
       if element[0] == key :
         del self.arr[hash][idx]
 
+  def keys(self) :
+    keys = []
+    for element in self.arr :
+        for key in element :
+            keys.append(key[0])
+    return keys
+
 ## Challenge 31 -> REPEATED WORD :
 
 def repeated_word(str) :
@@ -54,3 +61,18 @@ def repeated_word(str) :
     else :
       hash_table.add(i, 1)
   return 'Nothing Repeate !!!'
+
+## Challenge 33 -> Hashmap Left Join :
+
+def left_join_hash(hash_one,hash_two) :
+    output = []
+    for key in hash_one.keys() :
+        if key in hash_two.keys() :
+            output.append([key, hash_one.get(key), hash_two.get(key)])
+        else :
+            output.append([key, hash_one.get(key), None])
+
+    for key in hash_two.keys() :
+        if key not in hash_one.keys() :
+            output.append([key, None, hash_two.get(key)])
+    return output
