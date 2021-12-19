@@ -1,3 +1,5 @@
+from collections import deque
+
 class Vertex :
     """
     Input : value
@@ -8,6 +10,16 @@ class Vertex :
         self.value = value
     def __str__(self) :
         return f'{self.value}'
+
+class Queue :
+    def __init__(self) :
+        self.dq = deque()
+    def enqueue(self, value) :
+        self.dq.append(value)
+    def dequeue(self) :
+        return self.dq.pop(0)
+    def __len__(self) :
+        return len(self.dq)
 
 class Edge :
     """
@@ -71,6 +83,30 @@ class Graph :
     """
     def size(self) :
         return len(self.__adj_list)
+
+################### Challenge 36 ########################
+################ graph_breadth_first ####################
+    """
+    Input : start_vertex
+    What is doing : it will traverse throught all nodes
+    Return : A list of nodes
+    """
+    def graph_breadth_first(self, start_vertex) :
+        queue = Queue()
+        result = []
+        visited = set()
+        queue.enqueue(start_vertex)
+        visited.add(start_vertex)
+        while len(queue) :
+            current_vertex = queue.dequeue()
+            neighbors = self.get_neighbors(current_vertex)
+            for edge in neighbors :
+                neighbors = edge.vertex
+                if neighbors not in visited :
+                    queue.enqueue(neighbors)
+                    visited.add(neighbors)
+                    result.append(neighbors)
+        return result
 
 print(Vertex(5))
 print(Edge(4,8))
