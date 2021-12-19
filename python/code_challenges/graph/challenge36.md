@@ -24,9 +24,9 @@ Breadth First Traversal On a Graph Implementation .
 ***Space :*** O(n)
 
 
-> ***[The Code .....](/python/code_challenges/hash_table/hash_table/hash.py)***
+> ***[The Code .....](/python/code_challenges/graph/graph/graph.py)***
 
-> ***[The Tests .....](/python/code_challenges/hash_table/tests/test_hash_table.py)***
+> ***[The Tests .....](/python/code_challenges/graph/tests/test_graph.py)***
 ---
 ## Check List
 
