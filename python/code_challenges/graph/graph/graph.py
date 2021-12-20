@@ -108,5 +108,27 @@ class Graph :
                     result.append(neighbors)
         return result
 
+################### Challenge 37 ########################
+################# graph-business-trip ###################
+    def business_trip(self,cities:list) :
+        sum = 0
+        flag = False
+        for i in range(len(cities)-1) :
+            neighbors = self.__adj_list[cities[i]]
+            print(neighbors)
+            for neighbor in neighbors :
+                if cities[i + 1] == neighbor[0] :
+                    sum += neighbor[1]
+                    flag = True
+                    break
+                else :
+                    sum += 0
+                    flag = False
+        if not flag :
+            return False,'$0'
+        return True,'$'+ str(sum)
+
+
+
 print(Vertex(5))
 print(Edge(4,8))
