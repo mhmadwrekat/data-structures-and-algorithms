@@ -64,3 +64,34 @@ def test_business_trip() :
     graph.add_edge(v5,v6,250)
     cities_one_two_three = [v1,v2,v3]
 #    assert graph.business_trip(cities_one_two_three) == (True, '$249')
+
+################### Challenge 38 ########################
+################### graph_depth_first ###################
+def test_graph_depth_first() :
+    graph = Graph()
+    v1 = graph.add_node('a')
+    v2 = graph.add_node('b')
+    v3 = graph.add_node('c')
+    v4 = graph.add_node('d')
+    v5 = graph.add_node('e')
+    v6 = graph.add_node('f')
+    v7 = graph.add_node('g')
+    v8 = graph.add_node('h')
+    graph.add_edge(v1, v2)
+    graph.add_edge(v1, v4)
+    graph.add_edge(v2,v1)
+    graph.add_edge(v2,v3)
+    graph.add_edge(v2,v4)
+    graph.add_edge(v3,v2)
+    graph.add_edge(v3,v7)
+    graph.add_edge(v4,v1)
+    graph.add_edge(v4,v2)
+    graph.add_edge(v4,v5)
+    graph.add_edge(v4,v8)
+    graph.add_edge(v4,v6)
+    graph.add_edge(v6,v4)
+    graph.add_edge(v6,v8)
+    graph.add_edge(v8,v6)
+    graph.add_edge(v8,v4)
+    graph.add_edge(v5,v4)
+    assert graph.graph_depth_first(v1) == ['a', 'b', 'c', 'g', 'd', 'e', 'h', 'f']
