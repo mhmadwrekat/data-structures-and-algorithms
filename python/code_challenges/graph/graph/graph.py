@@ -128,7 +128,22 @@ class Graph :
             return False,'$0'
         return True,'$'+ str(sum)
 
-
+################### Challenge 38 ########################
+################### graph_depth_first ###################
+    def graph_depth_first(self, node) :
+        visited = set()
+        visited.add(node)
+        depth_first_list = []
+        def __DFS(node, visited, depth_first_list) :
+            visited.add(node)
+            depth_first_list.append(node.value)
+            neighbors = self.get_neighbors(node)
+            if neighbors != 'Empty' :
+                for i in neighbors :
+                    if i.vertex not in visited :
+                        __DFS(i.vertex, visited, depth_first_list)
+        __DFS(node,visited,depth_first_list)
+        return depth_first_list
 
 print(Vertex(5))
 print(Edge(4,8))
